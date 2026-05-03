@@ -1,0 +1,82 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row h2 {
+  margin-bottom: 10px;
+}
+
+/* Wrapper for arrows */
+.row__wrapper {
+  position: relative;
+}
+
+/* Scroll container */
+.row__posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Poster */
+.row__poster {
+  max-height: 120px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.row__poster:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+/* Large row */
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.12);
+}
+
+/* Arrows */
+.row__arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.row__arrow.left {
+  left: 0;
+}
+
+.row__arrow.right {
+  right: 0;
+}
+
+.row__arrow:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* Trailer section */
+.row__trailer {
+  padding: 40px;
+}

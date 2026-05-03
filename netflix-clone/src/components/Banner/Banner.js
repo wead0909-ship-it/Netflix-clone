@@ -46,8 +46,8 @@ const Banner = () => {
 
                 {/* Buttons */}
                 <div className="banner__buttons">
-                    <button className="banner__button">Play</button>
-                    <button className="banner__button">My List</button>
+                    <button className="banner__button"><h3>Play</h3></button>
+                    <button className="banner__button"><h3>My List</h3></button>
                 </div>
 
                 {/* Description */}
